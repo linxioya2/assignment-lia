@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  animation: fadeInScale 3s ease-in-out 0.3s forwards;
+  }
+
+  body {
+    /*background-image: url(img/abstract.svg);*/
+    background-image: url(img/pattern-pink.svg);
+    background-position: 100% top;
+    background-color: #ffd8d8;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    line-height: 1.6;
+   overflow-x: hidden
+  }
+
+  .hero {
+    
+    padding: 20px;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    /*background: #e66ecc; /* Matches the hero background */
+    z-index: 9999;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #f7f4f9; /* Font color */
+    padding: 8px 20px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+
+  nav a:hover,
+  nav a:active {
+    background: #ffa9ef;
+    color: azure; /* Color when hovered */
+    transition: 0.3s;
+    /*animation: fadeInUp 0.3s ease;*/
+    scale: 120%;
+  }
+
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    pointer-events: none;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  nav ul li a:hover {
+    color: #bc4a4a;
+  }
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 1;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 0.9;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.contact-button {
+    background: #6a044f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    animation: fadeInUp 2s ease;
+  }
+
+.contact-button:hover{ /*hover when user put cursor*/
+    background: #482eb8; /*button color when hover*/
+    transition: 0.5s;
+    scale: 110%; /*the button gets bigger when hover*/
+  }
+
+.contact-button:active{ /*active when user click*/
+    background: #7f6de8; /*button color when hover*/
+    transition: 0.5s;
+    scale: 105%;
+}
+
+/*pic-and-shape is the container of rectangle and image*/
+.pic-and-shape{
+ position:relative; /*makes the container the reference point*/
+  display: flex; /*to put "welcome" beside*/
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 200px;
+ /* margin-left: 300px;/*set margin for both*/
+}
+
+.pic-and-shape .rectangle{
+  /*position: relative;*/
+  /*z-index: 1;*/
+  position: absolute; /*position rec and img within the container*/
+  z-index: 0;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 400px;
+  background-color: #404b5d;
+  margin-top: 100px;
+  margin-left: 140px;
+}
+
+.pic-and-shape .lia-welcome{
+  opacity: 0.6;
+  z-index: 1; 
+  width: 1350px;
+  height: 800px;
+  margin-top: -200px;
+}
+
+.pic-and-shape p{ /*welcome*/
+  font-family: 'Pencerio', cursive;
+  text-align: center;
+  color:#2d3b51;
+  font-weight: bold;
+  font-size: 7em;
+  font-style: normal;
+  margin-left: -700px;
+  margin-top: -200px;
+}
+
+.pic-and-shape .to-my-page{
+  font-family: 'Pencerio', cursive;
+  text-align:right;
+  color:#2d3b51;
+  font-weight: 800;
+  font-size: 1.8em;
+  font-style: normal;
+  margin-left: -300px;
+  margin-top: -80px;
+}
+
+.pic-and-shape .desc{
+  /*font-family: 'Pencerio', cursive;*/
+  text-align:left;
+  background-color: #ffffff;
+  border-radius: 100px 10px;
+  color:#2d3b51;
+  font-weight: bold;
+  font-size: 1.1em;
+  font-style: normal;
+  margin-left: -670px;
+  margin-top: 80px;
+  padding-top: 10px;
+  padding-right: 80px;
+  padding-bottom: 20px;
+  padding-left: 330px;
+  /*margin-top: -1px;*/
+}
+
+.rectangle, .lia-welcome{
+  pointer-events: none;
+}
+.button-container{
+  display: flex;
+  justify-content: flex-end; /* Aligns the button to the right */
+  margin-right: 370px; /* Optional: adds some spacing from the edge */
+  margin-top: -350px;
+  margin-bottom: 200px;
+}
+.explore-more-button {
+    background: #6a044f;
+    align-items: left;
+  float:right;
+  text-decoration: none;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    animation: fadeInUp 2s ease;
+  }
+
+.explore-more-button:hover{ /*hover when user put cursor*/
+    background: #482eb8; /*button color when hover*/
+    transition: 0.5s;
+    scale: 110%; /*the button gets bigger when hover*/
+  }
+
+.explore-more-button:active{ /*active when user click*/
+    background: #7f6de8; /*button color when hover*/
+    transition: 0.5s;
+    scale: 105%;
+}
+
+.section-brief-illustration {
+    padding: 100px 20px;
+    text-align: center;
+  background-color: aliceblue;
+  }
+
+ .grid {
+    display: flex;
+    gap: 5px; /* Reduce the gap between images */
+    justify-content: center; /* Center the images within the grid */
+    align-items: center; /* Align images vertically if their heights vary */
+}
+
+
+  .grid-item img {
+    width: 80%;
+    border-radius: 10px;
+    margin: 0;
+    animation: fadeInScale 5s ease-in-out 5s infinite;
+  }
+
+.brief-desc-container{
+  padding: 100px;
+  text-align: center;
+}
+
+.brief-desc-container h4{
+  color: #3d3c82;
+}
+

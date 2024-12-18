@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Video</title>
+    <link rel="stylesheet" href="videoStyle.css">
+    <script src="script.js"></script>
+    <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@100,200,300,400,500,700,800,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+     <nav>
+      <div class="logo">aliyavoo</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="biodata.html">Biodata</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="video.html">Video</a></li>
+        <!--<li><a href="#">Pages</a></li>-->
+      </ul>
+      <button class="contact-button" onclick="document.location='comments.html'">Comments</button>
+    </nav>       
+    </header>
+    
+    <section class="hero-content">
+      <h1>My video</h1>
+    <p>Here's an inspirational short video that delivers heartfelt message, <br>It encourages us to embrace the unknown, trust the process, and take that first step, no matter how daunting it may seem.</p>
+    </section>
+    
+    <section>
+        <video controls>
+            <source src="img/lia-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    
+    <div class="container">
+    <div class="left-section">
+      <div class="contact-boxes">
+        <a href="https://www.instagram.com/shaufidesign_printing/" class="contact-box">
+
+          <h2>Instagram</h2>
+          <p>@aliyavoo</p>
+        </a>
+        <a href="https://wa.me/0123456789" class="contact-box">
+ 
+          <h2>Whatsapp</h2>
+          <p>012-3456789</p>
+        </a>
+        <a href="mailto:liavhm09@gmail.com" class="contact-box">
+
+          <h2>Email</h2>
+          <p>liavhm09@gmail.com</p>
+        </a>
+        <a href="https://twitter.com/username" class="contact-box">
+
+          <h2>Twitter</h2>
+          <p>@lialialia</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="right-section">
+      <div class="contact-form">
+        <h2>Get In Touch</h2>
+        <p>If you're interested to know more or collaborate, fill in the form below <br></p>
+        <form id="contactForm" action="#">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <input type="text" placeholder="Subject">
+          <textarea rows="5" placeholder="Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

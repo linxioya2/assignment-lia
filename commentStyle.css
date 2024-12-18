@@ -1,0 +1,229 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  animation: fadeInScale 3s ease-in-out 0.3s forwards;
+  }
+
+  body {
+    background-image: url(img/pattern-grey.svg);
+    background-color: #eeede9;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    line-height: 1.6;
+  }
+
+  .hero {
+    
+    padding: 20px;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    /*background: #e66ecc; /* Matches the hero background */
+    z-index: 1000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #f7f4f9; /* Font color */
+    padding: 8px 20px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+
+  nav a:hover,
+  nav a:active {
+    background: #ffa9ef;
+    color: azure; /* Color when hovered */
+    transition: 0.3s;
+    /*animation: fadeInUp 0.3s ease;*/
+    scale: 120%;
+  }
+
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    pointer-events: none;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  nav ul li a:hover {
+    color: #bc4a4a;
+  }
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 1;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 0.9;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.contact-button {
+    background: #6a044f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    animation: fadeInUp 2s ease;
+  }
+
+.contact-button:hover{ /*hover when user put cursor*/
+    background: #482eb8; /*button color when hover*/
+    transition: 0.5s;
+    scale: 110%; /*the button gets bigger when hover*/
+  }
+
+.contact-button:active{ /*active when user click*/
+    background: #7f6de8; /*button color when hover*/
+    transition: 0.5s;
+    scale: 105%;
+}
+
+ .hero-content {
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 3em;
+    -webkit-text-fill-color: #ffffff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #b81da3;
+  }
+
+.hero-content p {
+    font-size: 18px;
+  font-weight: bold;
+  }
+
+.container {
+            display: flex;
+    margin-left: 300px;
+            width: 700px;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .left-section {
+            width: 40%;
+            background-color: #6d5c74;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .left-section img {
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        .right-section {
+            width: 60%;
+            background-color: #fcd1c4;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            margin: 0 0 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .gender, .spayed {
+            display: flex;
+            gap: 15px;
+        }
+
+        .gender label, .spayed label {
+            display: flex;
+            align-items: center;
+        }
+
+        button {
+            background-color: #6d5c74;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #5a4a60;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }

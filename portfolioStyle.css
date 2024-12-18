@@ -1,0 +1,222 @@
+*{
+    animation: fadeInScale 3s ease-in-out 0.3s forwards;
+}
+body {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 0.9;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+.hero {
+    
+    padding: 20px;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    /*background: #e66ecc; /* Matches the hero background */
+    z-index: 1000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #f7f4f9; /* Font color */
+    padding: 8px 20px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+
+  nav a:hover,
+  nav a:active {
+    background: #ffffff;
+    color: azure; /* Color when hovered */
+    transition: 0.3s;
+    /*animation: fadeInUp 0.3s ease;*/
+    scale: 120%;
+  }
+
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    pointer-events: none;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  nav ul li a:hover {
+    color: #bc4a4a;
+  }
+
+.contact-button {
+    background: #6a044f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    animation: fadeInUp 2s ease;
+  }
+
+.contact-button:hover{ /*hover when user put cursor*/
+    background: #482eb8; /*button color when hover*/
+    transition: 0.5s;
+    scale: 110%; /*the button gets bigger when hover*/
+  }
+
+.contact-button:active{ /*active when user click*/
+    background: #7f6de8; /*button color when hover*/
+    transition: 0.5s;
+    scale: 105%;
+}
+
+header {
+    background-color: #fcd2ff;
+    padding: 20px;
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.icons{
+    align-items: center;
+    width: 50%;
+}
+
+.skill h1{
+    font-size: 3em;
+    -webkit-text-fill-color: #ffffff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #3f0237;
+}
+
+.design {
+    text-align: center;
+    width: 30%;
+}
+
+
+.design img {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    /*object-fit: cover;*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.design img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.design h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.design p {
+    font-size: 1em;
+    color: #555;
+}
+
+.mockup-image {
+    align-items: left;
+    width: 90%;
+    margin-right: 200px;
+}
+.mockup-and-award {
+    display: flex;
+}
+
+.award {
+    width: 50%;
+    margin-left: -600px;
+    margin-bottom: -200px;
+}
+.more-mockup p{
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+
+ .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .feature {
+    text-align: center;
+  }
+
+  .icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+
+
+
